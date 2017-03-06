@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "water.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    water *wat = [[water alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:wat];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
